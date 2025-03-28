@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Your Website</title>
+</head>
+<body style="font-family: Arial, sans-serif; background: linear-gradient(to right, #141E30, #243B55); margin: 0; padding: 0; color: white;">
+
+    <!-- Login Form Container -->
+    <div style="width: 350px; margin: 80px auto; padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px; box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); text-align: center;">
+        <h2 style="margin-bottom: 20px; font-size: 24px;">Login to Your Account</h2>
+
+        <input type="text" id="username" placeholder="Username" 
+               style="width: 90%; padding: 12px; margin: 10px 0; border: none; border-radius: 5px; background: rgba(255, 255, 255, 0.2); color: white;">
+        
+        <input type="password" id="password" placeholder="Password" 
+               style="width: 90%; padding: 12px; margin: 10px 0; border: none; border-radius: 5px; background: rgba(255, 255, 255, 0.2); color: white;">
+        
+        <button onclick="login()" 
+                style="width: 95%; padding: 12px; background: #00c6ff; border: none; border-radius: 5px; color: white; font-size: 16px; cursor: pointer; transition: 0.3s;">
+            Login
+        </button>
+
+        <p id="message" style="color: red; margin-top: 10px;"></p>
+
+        <p style="margin-top: 15px; font-size: 14px;">Don't have an account? <a href="join.html" style="color: #00c6ff; text-decoration: none;">Sign Up</a></p>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background: rgba(255, 255, 255, 0.1); text-align: center; padding: 15px; position: absolute; bottom: 0; width: 100%; font-size: 14px;">
+        &copy; 2025 Your Website | All rights reserved.
+    </footer>
+
+    <!-- JavaScript for Login Validation -->
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "admin" && password === "password123") {
+                alert("Login Successful!");
+                window.location.href = "dashboard.html"; // Redirect to dashboard
+            } else {
+                document.getElementById("message").innerText = "Invalid username or password!";
+            }
+        }
+    </script>
+
+</body>
+</html>

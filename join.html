@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Mission - Education for All</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">Our Initiative</a></li>
+                <li><a href="index.html#problem">The Problem</a></li>
+                <li><a href="index.html#solution">Solutions</a></li>
+                <li><a href="join.html">Our Mission</a></li>
+                <li><a href="mentorship.html">Mentorship</a></li>
+                <li><a href="feedback.html" target="_blank">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="join-hero" class="container">
+        <h1>Be a Part of the Change</h1>
+        <p>Join our movement to make education accessible for everyone.</p>
+        <button class="button" onclick="document.getElementById('signup-form').scrollIntoView();">Sign Up Now</button>
+    </section>
+
+    <!-- Why Join Section -->
+    <section id="why-join" class="container">
+        <h2>Why Join Us?</h2>
+        <ul>
+            <li>💡 <strong> Make an Impact:</strong> Help students access quality education.</li>
+            <li>🤝 <strong>Be Part of a Community:</strong> Connect with like-minded volunteers.</li>
+            <li>📚 <strong>Share Your Knowledge:</strong> Teach, mentor, or donate study materials.</li>
+            <li>🌍 <strong>Contribute to a Better Future:</strong> Bridge the education gap worldwide.</li>
+        </ul>
+    </section>
+
+    <!-- How to Contribute Section -->
+    <section id="how-to-contribute" class="container">
+        <h2>Ways You Can Help</h2>
+        <ul>
+            <li>👨‍🏫 <strong>Volunteer as a Teacher:</strong> Conduct online/offline classes.</li>
+            <li>📖 <strong>Donate Books & Resources:</strong> Provide study materials to underprivileged students.</li>
+            <li>📝 <strong>Become a Mentor:</strong> Guide students on their learning journey.</li>
+            <li>📢 <strong>Spread the Word:</strong> Help us reach more students in need.</li>
+        </ul>
+    </section>
+
+    <!-- Signup Form Section -->
+    <section id="signup-form" class="container">
+        <h2>Sign Up to Join Us</h2>
+        <form>
+            <label for="name"><strong>Full Name: </strong></label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="role"><strong>How would you like to help?</strong></label>
+            <select id="role">
+                <option value="volunteer">Volunteer as a Teacher</option>
+                <option value="mentor">Become a Mentor</option>
+                <option value="donate">Donate Books & Resources</option>
+                <option value="spread">Spread Awareness</option>
+            </select>
+
+            <button class="button" type="submit">Join Now</button>
+        </form>
+    </section>
+
+    <!-- Contact Information -->
+    <section id="contact-info" class="container">
+        <h2>Have Questions? Contact Us</h2>
+        <p>Email: support@educationforall.org</p>
+        <p>Phone: +91 95484 64736</p>
+    </section>
+        <!-- Footer -->
+        <footer style="background: rgba(255, 255, 255, 0.1); text-align: center; padding: 15px; position: absolute; bottom: 0; width: 100%; font-size: 14px;">
+            &copy; 2025 Your Website | All rights reserved.
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>
